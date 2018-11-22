@@ -1,0 +1,3 @@
+ClientCallYhjyptByHttpCardTest.java  为久远银海公司提供的参照代码
+
+开放平台接口规范-社会保障卡分册.doc  为银海提供的社保方面的文档

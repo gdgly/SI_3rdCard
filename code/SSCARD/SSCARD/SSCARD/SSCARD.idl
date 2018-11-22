@@ -1,0 +1,63 @@
+// SSCARD.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(SSCARD.tlb)，该类型库将成为
+// SSCARD.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(6CA09989-D8DC-4679-BE5B-FA31008A30AE), version(1.0),
+  control ]
+library SSCARDLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CSSCARDCtrl 的主调度接口
+	[ 
+		uuid(7E4FB4C8-0B4B-4D7F-A417-7B7DEBDCF391)	
+	]
+	dispinterface _DSSCARD
+	{
+		properties:
+			[id(2) ] BSTR pOutInfo;
+	methods:
+			[id(1)] LONG iReadCardBas(LONG iType);
+			[id(3)] LONG iReadCardBas_HSM_Step1(LONG iType);
+			[id(4)] LONG iReadCardBas_HSM_Step2(BSTR pKey);
+			[id(5)] BSTR ocxReadTrack(LONG lTimeout);
+			[id(6)] LONG ocxEjectCard(void);
+			[id(7)] ULONG ocxCloseDevice(void);
+			[id(8)] LONG ocxOpenDevice(void);
+			[id(9)] LONG iVerifyPIN(LONG iType, BSTR pin);
+			[id(10)] LONG iChangePIN(LONG iType, BSTR oldPin, BSTR newPin);
+			[id(11)] LONG iReloadPIN(LONG iType, BSTR pCardInfo);
+			[id(12)] LONG iReloadPIN_HSM_Step1(LONG iType, BSTR pCardInfo);
+			[id(13)] LONG iReloadPIN_HSM_Step2(BSTR pKey, BSTR newPin);
+			[id(14)] LONG iReloadPIN_HSM_Step3(BSTR pKey);
+	};
+
+	//  CSSCARDCtrl 的事件调度接口
+
+	[ 
+		uuid(9F6CBFA1-1839-4733-8900-11640ACC21DD)	
+	]
+	dispinterface _DSSCARDEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+	};
+
+	//  CSSCARDCtrl 的类信息
+	[
+		uuid(B2167F16-E8B0-4D84-802E-3C7F34AA2873)
+	]
+	coclass SSCARD
+	{
+		[default] dispinterface _DSSCARD;
+		[default, source] dispinterface _DSSCARDEvents;
+	};
+
+};

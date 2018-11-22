@@ -1,0 +1,698 @@
+[14:31:26] function=EgAPP_GetDllinfo, Type=0; reader.cpp[82];
+
+[14:31:26] 获取DLL路径: C:\WINDOWS\SYSTEM32\; reader.cpp[86];
+
+[14:31:26] 设备初始化,端口号[100],波特率[115200]; reader.cpp[1885];
+
+[14:31:26] 设备初始化,端口号[100],波特率[115200]; trf32reader.cpp[416];
+
+[14:31:26] 取得[ Trf32.dll ]路径[ C:\WINDOWS\SYSTEM32\Trf32.dll ]; trf32reader.cpp[67];
+
+[14:31:26] 0=LoadLibrary(C:\WINDOWS\SYSTEM32\Trf32.dll); trf32reader.cpp[69];
+
+[14:31:26] [ Trf32.dll ]文件缺失，退出函数[ -1 ]; trf32reader.cpp[73];
+
+[14:31:26] trf32-DC协议系列设备端口[100]初始化失败，跳过; reader.cpp[1987];
+
+[14:31:26] 180=IC_InitComm_Baud(100,115200); reader.cpp[222];
+
+[14:31:26] 0=IC_ReadVer(180,Z90RFEUK05); reader.cpp[1173];
+
+[14:31:26] DCIC32系列-取得设备版本号[Z90RFEUK05]; reader.cpp[1177];
+
+[14:31:26] DCIC32系列-设备二级版本号读取成功,内部代码[14],退出函数[ 0 ]; reader.cpp[1205];
+
+[14:31:26] DCIC32系列-设备初始化成功:端口[100],波特率[115200],设备句柄[180]; reader.cpp[234];
+
+[14:31:26] 插入设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[102];
+
+[14:31:26] /**********设备列表**********/; commondefine.cpp[105];
+
+[14:31:26] Seq[1],Connected[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[75];
+
+[14:31:26] /**********设备列表**********/; commondefine.cpp[107];
+
+[14:31:26] DCIC32系列-设备端口初始化成功,退出函数[ 1 ]; reader.cpp[1914];
+
+[14:31:26] 读取设备32位长版本号; reader.cpp[1416];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 0=IC_ReadDevSnr(180,D&C-Z90ULM-CDMD-DCZ9160401000040); reader.cpp[1428];
+
+[14:31:26] 取得设备32位长版本号En[5d1e65f50b1373a4f764d86a41b07aa8faf66d1ac6b8fb90d5d0217cf8748715],退出函数[ 0 ]; reader.cpp[1467];
+
+[14:31:26] 社保PSAM卡上电复位[SLOT:17]; psam.cpp[3]; psam.cpp[333];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] IC卡上电复位[SLOT:17],iDEV_TYPE=1; reader.cpp[2337];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 设置卡座[0x11]; reader.cpp[2027];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 0=IC_InitType(180,0x0e); reader.cpp[483];
+
+[14:31:26] DCIC32系列-卡座[0x11->0x0e]设置成功,退出函数[ 0 ]; reader.cpp[486];
+
+[14:31:26] 卡座设置成功,退出函数[0]; reader.cpp[2070];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] -193=IC_CpuReset_Hex(180，0); reader.cpp[724];
+
+[14:31:26] DCIC32系列-卡插反2[-193],退出函数[ -96 ]; reader.cpp[738];
+
+[14:31:26] 复位失败,退出函数[ -96 ]; reader.cpp[2404];
+
+[14:31:26] 社保PSAM卡上电复位错误返回,退出函数[-96]; psam.cpp[342];
+
+[14:31:26] 关闭端口,设备句柄=[1]; reader.cpp[3332];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 删除设备.Seq[1]; commondefine.cpp[128];
+
+[14:31:26] /**********设备列表**********/; commondefine.cpp[129];
+
+[14:31:26] /**********设备列表**********/; commondefine.cpp[131];
+
+[14:31:26] IC_ExitComm(180); reader.cpp[3284];
+
+[14:31:26] 设备端口释放成功,退出函数[0]; reader.cpp[3321];
+
+[14:31:26] function=EgAPP_GetDllinfo, Type=0; reader.cpp[82];
+
+[14:31:26] 获取DLL路径: C:\WINDOWS\SYSTEM32\; reader.cpp[86];
+
+[14:31:26] 设备初始化,端口号[100],波特率[115200]; reader.cpp[1885];
+
+[14:31:26] 设备初始化,端口号[100],波特率[115200]; trf32reader.cpp[416];
+
+[14:31:26] 取得[ Trf32.dll ]路径[ C:\WINDOWS\SYSTEM32\Trf32.dll ]; trf32reader.cpp[67];
+
+[14:31:26] 0=LoadLibrary(C:\WINDOWS\SYSTEM32\Trf32.dll); trf32reader.cpp[69];
+
+[14:31:26] [ Trf32.dll ]文件缺失，退出函数[ -1 ]; trf32reader.cpp[73];
+
+[14:31:26] trf32-DC协议系列设备端口[100]初始化失败，跳过; reader.cpp[1987];
+
+[14:31:26] 180=IC_InitComm_Baud(100,115200); reader.cpp[222];
+
+[14:31:26] 0=IC_ReadVer(180,Z90RFEUK05); reader.cpp[1173];
+
+[14:31:26] DCIC32系列-取得设备版本号[Z90RFEUK05]; reader.cpp[1177];
+
+[14:31:26] DCIC32系列-设备二级版本号读取成功,内部代码[14],退出函数[ 0 ]; reader.cpp[1205];
+
+[14:31:26] DCIC32系列-设备初始化成功:端口[100],波特率[115200],设备句柄[180]; reader.cpp[234];
+
+[14:31:26] 插入设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[102];
+
+[14:31:26] /**********设备列表**********/; commondefine.cpp[105];
+
+[14:31:26] Seq[1],Connected[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[75];
+
+[14:31:26] /**********设备列表**********/; commondefine.cpp[107];
+
+[14:31:26] DCIC32系列-设备端口初始化成功,退出函数[ 1 ]; reader.cpp[1914];
+
+[14:31:26] 读取设备32位长版本号; reader.cpp[1416];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 0=IC_ReadDevSnr(180,D&C-Z90ULM-CDMD-DCZ9160401000040); reader.cpp[1428];
+
+[14:31:26] 取得设备32位长版本号En[5d1e65f50b1373a4f764d86a41b07aa8faf66d1ac6b8fb90d5d0217cf8748715],退出函数[ 0 ]; reader.cpp[1467];
+
+[14:31:26] 社保卡上电复位，设备句柄=1, 卡座=0x01; iccard.cpp[2686];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] IC卡上电复位[SLOT:1],iDEV_TYPE=1; reader.cpp[2337];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 设置卡座[0x 1]; reader.cpp[2027];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 0=IC_InitType(180,0x0c); reader.cpp[483];
+
+[14:31:26] DCIC32系列-卡座[0x01->0x0c]设置成功,退出函数[ 0 ]; reader.cpp[486];
+
+[14:31:26] 卡座设置成功,退出函数[0]; reader.cpp[2070];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] -134=IC_CpuReset_Hex(180，0); reader.cpp[724];
+
+[14:31:26] DCIC32系列-无卡2[-134],退出函数[ -15 ]; reader.cpp[734];
+
+[14:31:26] 复位失败,退出函数[ -15 ]; reader.cpp[2404];
+
+[14:31:26] 社保卡上电复位，设备句柄=1, 卡座=0x00; iccard.cpp[2686];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] IC卡上电复位[SLOT:0],iDEV_TYPE=1; reader.cpp[2337];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 0=IC_ResetMifare(180,0); reader.cpp[618];
+
+[14:31:26] 0=IC_ResetMifare(180,1); reader.cpp[620];
+
+[14:31:26] 0=IC_Config_Card(180,'A'); reader.cpp[622];
+
+[14:31:26] 0=IC_Card(180,0,345196519); reader.cpp[625];
+
+[14:31:26] 0=IC_Pro_Resethex(180,18); reader.cpp[633];
+
+[14:31:26] DCIC32系列-TYPEA卡复位成功,复位信息:[127880A0020081544C9686845101C0666779],退出函数[ 0 ]; reader.cpp[639];
+
+[14:31:26] 复位成功,复位信息[127880A0020081544C9686845101C0666779],退出函数[ 0 ]; reader.cpp[2400];
+
+[14:31:26] 选择社保卡应用环境SSSE，设备句柄=[1]; iccard.cpp[2722];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:20][00A404000F7378312E73682EC9E7BBE1B1A3D5CF]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:20][00A404000F7378312E73682EC9E7BBE1B1A3D5CF]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:32][6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][32][6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 选择应用环境SSSE[成功],退出函数[0]; iccard.cpp[2738];
+
+[14:31:26] 选择文件[EF05]; iccard.cpp[2967];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:7][00A4020002EF05]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:7][00A4020002EF05]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:2][9000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][2][9000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 文件[EF05]选择成功，退出函数[0]; iccard.cpp[2973];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:5][00B2010012]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:5][00B2010012]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:20][0110510100D156000005C0666779C8C975CC9000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][20][0110510100D156000005C0666779C8C975CC9000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 获取社保卡算法环境标识,FCI=[6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],应用城市代码=[ 510100 ]; iccard.cpp[2829];
+
+[14:31:26] 该社保卡支持SM4算法，退出函数[0]; iccard.cpp[2887];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:5][00B2030006]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:5][00B2030006]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:8][0304332E30309000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][8][0304332E30309000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:5][00B207000B]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:5][00B207000B]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:13][07094149363636363636589000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][13][07094149363636363636589000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 社保PSAM卡上电复位[SLOT:17]; psam.cpp[3]; psam.cpp[333];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] IC卡上电复位[SLOT:17],iDEV_TYPE=1; reader.cpp[2337];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 设置卡座[0x11]; reader.cpp[2027];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 0=IC_InitType(180,0x0e); reader.cpp[483];
+
+[14:31:26] DCIC32系列-卡座[0x11->0x0e]设置成功,退出函数[ 0 ]; reader.cpp[486];
+
+[14:31:26] 卡座设置成功,退出函数[0]; reader.cpp[2070];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] -193=IC_CpuReset_Hex(180，0); reader.cpp[724];
+
+[14:31:26] DCIC32系列-卡插反2[-193],退出函数[ -96 ]; reader.cpp[738];
+
+[14:31:26] 复位失败,退出函数[ -96 ]; reader.cpp[2404];
+
+[14:31:26] 社保PSAM卡上电复位错误返回,退出函数[-96]; psam.cpp[342];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 选择社保卡应用环境SSSE，设备句柄=[1]; iccard.cpp[2722];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:20][00A404000F7378312E73682EC9E7BBE1B1A3D5CF]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:20][00A404000F7378312E73682EC9E7BBE1B1A3D5CF]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:32][6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][32][6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 选择应用环境SSSE[成功],退出函数[0]; iccard.cpp[2738];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:5][0084000008]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:5][0084000008]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:10][5B2AFCA5DD0ACDF29000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][10][5B2AFCA5DD0ACDF29000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:5][0084000008]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:5][0084000008]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:10][832859DC5C8D44E49000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][10][832859DC5C8D44E49000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:21][0088000010832859DC5C8D44E45B2AFCA5DD0ACDF2]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:21][0088000010832859DC5C8D44E45B2AFCA5DD0ACDF2]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:10][89832FB63AF5D6C29000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][10][89832FB63AF5D6C29000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:5][0084000008]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:5][0084000008]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:10][294F0E67DFF409FE9000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][10][294F0E67DFF409FE9000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 请求=[SLOT:0][Len:5][0084000008]; reader.cpp[2831];
+
+[14:31:26] 请求=[SLOT:0][Len:5][0084000008]; reader.cpp[2525];
+
+[14:31:26] 应答=[SLOT:0][Len:10][42CF103E5F0E4D0A9000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:26] 应答=[SLOT:0][10][42CF103E5F0E4D0A9000],退出函数[0]; reader.cpp[2838];
+
+[14:31:26] 获取设备内部写入的唯一识别码; reader.cpp[3726];
+
+[14:31:26] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:26] 0=IC_GetDeviceUid(180,DCKJ0100201706006001); reader.cpp[3737];
+
+[14:31:26] uid[ DCKJ0100201706006001 ], ITEM_NUMBER[ EG-XA02-0000-00000000 ]; reader.cpp[3741];
+
+[14:31:26] 设备唯一识别码读取成功[ 01a668780f326d59ab3beb89606bb848348f29bf78bd2fd969234dbead053e4d ]; reader.cpp[3745];
+
+[14:31:27] 获取密钥属性，传入密钥逻辑地址[004C]; iccard.cpp[7626];
+
+[14:31:27] 密钥[Addr:004C]属性:密钥标识[0A],PSAM卡密钥用途[67],PSAM卡用途标识[0A]; iccard.cpp[7654];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:21][0082000A10FA617472D0E471DD294F0E67DFF409FE]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:21][0082000A10FA617472D0E471DD294F0E67DFF409FE]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:2][9000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][2][9000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 选择文件[EF05]; iccard.cpp[2967];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:7][00A4020002EF05]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:7][00A4020002EF05]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:2][9000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][2][9000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 文件[EF05]选择成功，退出函数[0]; iccard.cpp[2973];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2030006]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2030006]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:8][0304332E30309000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][8][0304332E30309000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2050006]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2050006]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:8][0504201804039000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][8][0504201804039000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2060006]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2060006]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:8][0604202804039000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][8][0604202804039000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 选择文件[EF06]; iccard.cpp[2967];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:7][00A4020002EF06]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:7][00A4020002EF06]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:2][9000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][2][9000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 文件[EF06]选择成功，退出函数[0]; iccard.cpp[2973];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2080014]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2080014]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:22][08123531303732333139383730363237333131359000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][22][08123531303732333139383730363237333131359000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2090020]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B2090020]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:34][091EC0EEC0DA00000000000000000000000000000000000000000000000000009000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][34][091EC0EEC0DA00000000000000000000000000000000000000000000000000009000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B24E0016]; reader.cpp[2831];
+
+[14:31:27] 请求=[SLOT:0][Len:5][00B24E0016]; reader.cpp[2525];
+
+[14:31:27] 应答=[SLOT:0][Len:24][4E1400000000000000000000000000000000000000009000],APDU返回值=0; reader.cpp[2604];
+
+[14:31:27] 应答=[SLOT:0][24][4E1400000000000000000000000000000000000000009000],退出函数[0]; reader.cpp[2838];
+
+[14:31:27] 获取设备内部写入的唯一识别码; reader.cpp[3726];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 0=IC_GetDeviceUid(180,DCKJ0100201706006001); reader.cpp[3737];
+
+[14:31:27] uid[ DCKJ0100201706006001 ], ITEM_NUMBER[ EG-XA02-0000-00000000 ]; reader.cpp[3741];
+
+[14:31:27] 设备唯一识别码读取成功[ 01a668780f326d59ab3beb89606bb848348f29bf78bd2fd969234dbead053e4d ]; reader.cpp[3745];
+
+[14:31:27] 关闭端口,设备句柄=[1]; reader.cpp[3332];
+
+[14:31:27] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:31:27] 删除设备.Seq[1]; commondefine.cpp[128];
+
+[14:31:27] /**********设备列表**********/; commondefine.cpp[129];
+
+[14:31:27] /**********设备列表**********/; commondefine.cpp[131];
+
+[14:31:27] IC_ExitComm(180); reader.cpp[3284];
+
+[14:31:27] 设备端口释放成功,退出函数[0]; reader.cpp[3321];
+
+[14:47:48] function=EgAPP_GetDllinfo, Type=0; reader.cpp[82];
+
+[14:47:48] 获取DLL路径: C:\WINDOWS\SYSTEM32\; reader.cpp[86];
+
+[14:47:48] 设备初始化,端口号[100],波特率[115200]; reader.cpp[1885];
+
+[14:47:48] 设备初始化,端口号[100],波特率[115200]; trf32reader.cpp[416];
+
+[14:47:48] 取得[ Trf32.dll ]路径[ C:\WINDOWS\SYSTEM32\Trf32.dll ]; trf32reader.cpp[67];
+
+[14:47:48] 0=LoadLibrary(C:\WINDOWS\SYSTEM32\Trf32.dll); trf32reader.cpp[69];
+
+[14:47:48] [ Trf32.dll ]文件缺失，退出函数[ -1 ]; trf32reader.cpp[73];
+
+[14:47:48] trf32-DC协议系列设备端口[100]初始化失败，跳过; reader.cpp[1987];
+
+[14:47:48] 180=IC_InitComm_Baud(100,115200); reader.cpp[222];
+
+[14:47:48] 0=IC_ReadVer(180,Z90RFEUK05); reader.cpp[1173];
+
+[14:47:48] DCIC32系列-取得设备版本号[Z90RFEUK05]; reader.cpp[1177];
+
+[14:47:48] DCIC32系列-设备二级版本号读取成功,内部代码[14],退出函数[ 0 ]; reader.cpp[1205];
+
+[14:47:48] DCIC32系列-设备初始化成功:端口[100],波特率[115200],设备句柄[180]; reader.cpp[234];
+
+[14:47:48] 插入设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[102];
+
+[14:47:48] /**********设备列表**********/; commondefine.cpp[105];
+
+[14:47:48] Seq[1],Connected[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[75];
+
+[14:47:48] /**********设备列表**********/; commondefine.cpp[107];
+
+[14:47:48] DCIC32系列-设备端口初始化成功,退出函数[ 1 ]; reader.cpp[1914];
+
+[14:47:48] 读取设备32位长版本号; reader.cpp[1416];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] 0=IC_ReadDevSnr(180,D&C-Z90ULM-CDMD-DCZ9160401000040); reader.cpp[1428];
+
+[14:47:48] 取得设备32位长版本号En[5d1e65f50b1373a4f764d86a41b07aa8faf66d1ac6b8fb90d5d0217cf8748715],退出函数[ 0 ]; reader.cpp[1467];
+
+[14:47:48] 社保卡上电复位，设备句柄=1, 卡座=0x01; iccard.cpp[2686];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] IC卡上电复位[SLOT:1],iDEV_TYPE=1; reader.cpp[2337];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] 设置卡座[0x 1]; reader.cpp[2027];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] 0=IC_InitType(180,0x0c); reader.cpp[483];
+
+[14:47:48] DCIC32系列-卡座[0x01->0x0c]设置成功,退出函数[ 0 ]; reader.cpp[486];
+
+[14:47:48] 卡座设置成功,退出函数[0]; reader.cpp[2070];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] -134=IC_CpuReset_Hex(180，0); reader.cpp[724];
+
+[14:47:48] DCIC32系列-无卡2[-134],退出函数[ -15 ]; reader.cpp[734];
+
+[14:47:48] 复位失败,退出函数[ -15 ]; reader.cpp[2404];
+
+[14:47:48] 社保卡上电复位，设备句柄=1, 卡座=0x00; iccard.cpp[2686];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] IC卡上电复位[SLOT:0],iDEV_TYPE=1; reader.cpp[2337];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] 0=IC_ResetMifare(180,0); reader.cpp[618];
+
+[14:47:48] 0=IC_ResetMifare(180,1); reader.cpp[620];
+
+[14:47:48] 0=IC_Config_Card(180,'A'); reader.cpp[622];
+
+[14:47:48] 0=IC_Card(180,0,345196519); reader.cpp[625];
+
+[14:47:48] 0=IC_Pro_Resethex(180,18); reader.cpp[633];
+
+[14:47:48] DCIC32系列-TYPEA卡复位成功,复位信息:[127880A0020081544C9686845101C0666779],退出函数[ 0 ]; reader.cpp[639];
+
+[14:47:48] 复位成功,复位信息[127880A0020081544C9686845101C0666779],退出函数[ 0 ]; reader.cpp[2400];
+
+[14:47:48] 选择社保卡应用环境SSSE，设备句柄=[1]; iccard.cpp[2722];
+
+[14:47:48] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:48] 请求=[SLOT:0][Len:20][00A404000F7378312E73682EC9E7BBE1B1A3D5CF]; reader.cpp[2831];
+
+[14:47:48] 请求=[SLOT:0][Len:20][00A404000F7378312E73682EC9E7BBE1B1A3D5CF]; reader.cpp[2525];
+
+[14:47:49] 应答=[SLOT:0][Len:32][6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],APDU返回值=0; reader.cpp[2604];
+
+[14:47:49] 应答=[SLOT:0][32][6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],退出函数[0]; reader.cpp[2838];
+
+[14:47:49] 选择应用环境SSSE[成功],退出函数[0]; iccard.cpp[2738];
+
+[14:47:49] 选择文件[EF05]; iccard.cpp[2967];
+
+[14:47:49] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:49] 请求=[SLOT:0][Len:7][00A4020002EF05]; reader.cpp[2831];
+
+[14:47:49] 请求=[SLOT:0][Len:7][00A4020002EF05]; reader.cpp[2525];
+
+[14:47:49] 应答=[SLOT:0][Len:2][9000],APDU返回值=0; reader.cpp[2604];
+
+[14:47:49] 应答=[SLOT:0][2][9000],退出函数[0]; reader.cpp[2838];
+
+[14:47:49] 文件[EF05]选择成功，退出函数[0]; iccard.cpp[2973];
+
+[14:47:49] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:49] 请求=[SLOT:0][Len:5][00B2010012]; reader.cpp[2831];
+
+[14:47:49] 请求=[SLOT:0][Len:5][00B2010012]; reader.cpp[2525];
+
+[14:47:49] 应答=[SLOT:0][Len:20][0110510100D156000005C0666779C8C975CC9000],APDU返回值=0; reader.cpp[2604];
+
+[14:47:49] 应答=[SLOT:0][20][0110510100D156000005C0666779C8C975CC9000],退出函数[0]; reader.cpp[2838];
+
+[14:47:49] 获取社保卡算法环境标识,FCI=[6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],应用城市代码=[ 510100 ]; iccard.cpp[2829];
+
+[14:47:49] 该社保卡支持SM4算法，退出函数[0]; iccard.cpp[2887];
+
+[14:47:49] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:49] 请求=[SLOT:0][Len:5][00B207000B]; reader.cpp[2831];
+
+[14:47:49] 请求=[SLOT:0][Len:5][00B207000B]; reader.cpp[2525];
+
+[14:47:49] 应答=[SLOT:0][Len:13][07094149363636363636589000],APDU返回值=0; reader.cpp[2604];
+
+[14:47:49] 应答=[SLOT:0][13][07094149363636363636589000],退出函数[0]; reader.cpp[2838];
+
+[14:47:49] 验证个人PIN码,键盘启用标识=[1],PIN码=[null]; iccard.cpp[4684];
+
+[14:47:49] 取得配置文件路径[ C:\WINDOWS\SYSTEM32\egapp.ini ]; pkeyboard.cpp[1485];
+
+[14:47:49] 弹出密码提示框[ FALSE ]; pkeyboard.cpp[1489];
+
+[14:47:49] 不启用提示框; pkeyboard.cpp[1526];
+
+[14:47:49] 索引:1; pkeyboard.cpp[1159];
+
+[14:47:49] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:49] 获取密码键盘明文输入,语音标段[1],超时时间[30]; pkeyboard.cpp[1178];
+
+[14:47:49] 取得当前路径[ C:\WINDOWS\SYSTEM32\egapp.ini ]; pkeyboard.cpp[1194];
+
+[14:47:49] 取得配置信息:EnableUSBKB=[ TRUE ],EnableExtKBLib = [ FALSE ],EnablePS2KB=[ FALSE ],OptPKB=[ FALSE ],devInfo=[ 3|9600 ],TimeOut=[ 30 ],CheckPinLen=[ FALSE ],PINMINLEN=[ 4 ],PINMAXLEN=[ 8 ]; pkeyboard.cpp[1216];
+
+[14:47:49] 内部刷新超时时间=[ 30 ]; pkeyboard.cpp[1251];
+
+[14:47:49] 启用P3-AS000-UB键盘，语音标段[1],超时时间[30]; pkeyboard.cpp[45];
+
+[14:47:49] -32=P3_IC_InitComm_Baud(100,115200); pkeyboard.cpp[48];
+
+[14:47:49] 键盘连接异常，退出函数[-34]; pkeyboard.cpp[51];
+
+[14:47:49] 索引:1; pkeyboard.cpp[1046];
+
+[14:47:49] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:49] 启用Z90设备内置键盘，语音标段[1],超时时间[30]; pkeyboard.cpp[1057];
+
+[14:47:49] 180=IC_SetUsbTimeout(1,3014686); pkeyboard.cpp[1083];
+
+[14:47:52] 0=IC_GetInputKey(180,1,2,30,6,123456); pkeyboard.cpp[1098];
+
+[14:47:52] 获取输入密码[123456][6],退出函数[0]; pkeyboard.cpp[1136];
+
+[14:47:52] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:52] 请求=[SLOT:0][Len:20][00A404000F7378312E73682EC9E7BBE1B1A3D5CF]; reader.cpp[2831];
+
+[14:47:52] 请求=[SLOT:0][Len:20][00A404000F7378312E73682EC9E7BBE1B1A3D5CF]; reader.cpp[2525];
+
+[14:47:53] 应答=[SLOT:0][Len:32][6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],APDU返回值=0; reader.cpp[2604];
+
+[14:47:53] 应答=[SLOT:0][32][6F1C840F7378312E73682EC9E7BBE1B1A3D5CFA50988011E9F0C038601039000],退出函数[0]; reader.cpp[2838];
+
+[14:47:53] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:53] 请求=[SLOT:0][Len:8][0020000003123456]; reader.cpp[2831];
+
+[14:47:53] 请求=[SLOT:0][Len:8][0020000003123456]; reader.cpp[2525];
+
+[14:47:53] 应答=[SLOT:0][Len:2][9000],APDU返回值=0; reader.cpp[2604];
+
+[14:47:53] 应答=[SLOT:0][2][9000],退出函数[0]; reader.cpp[2838];
+
+[14:47:53] 个人PIN码校验[成功],退出函数[0]; iccard.cpp[4742];
+
+[14:47:53] 液晶显示（系统提示）,类型[0]; reader.cpp[3435];
+
+[14:47:53] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:53] IC_DispMainMenu(180); reader.cpp[3451];
+
+[14:47:54] 关闭端口,设备句柄=[1]; reader.cpp[3332];
+
+[14:47:54] 查找设备.Seq[1],DevType[1],DevL2Type[14],DevHandle[180]; commondefine.cpp[153];
+
+[14:47:54] 删除设备.Seq[1]; commondefine.cpp[128];
+
+[14:47:54] /**********设备列表**********/; commondefine.cpp[129];
+
+[14:47:54] /**********设备列表**********/; commondefine.cpp[131];
+
+[14:47:54] IC_ExitComm(180); reader.cpp[3284];
+
+[14:47:54] 设备端口释放成功,退出函数[0]; reader.cpp[3321];
+

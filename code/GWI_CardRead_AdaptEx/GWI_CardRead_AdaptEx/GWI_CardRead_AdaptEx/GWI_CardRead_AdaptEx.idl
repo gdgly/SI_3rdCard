@@ -1,0 +1,60 @@
+// GWI_CardRead_AdaptEx.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(GWI_CardRead_AdaptEx.tlb)，该类型库将成为
+// GWI_CardRead_AdaptEx.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(277D0D05-A21F-4D09-8C14-C707AEE5D812), version(1.0),
+  control ]
+library GWI_CardRead_AdaptExLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CGWI_CardRead_AdaptExCtrl 的主调度接口
+	[ 
+		uuid(B028B27E-8384-4A53-97B9-C4ACCEDD99BA)	
+	]
+	dispinterface _DGWI_CardRead_AdaptEx
+	{
+		properties:
+		methods:
+			[id(1)] LONG ocx_Init(void);
+			[id(2)] BSTR ocx_PowerOn_EX(LONG iType, LONG lTimeout);
+			[id(3)] LONG ocx_PowerOFF_EX(void);
+			[id(4)] BSTR ocx_ChipIO_EX(BSTR szDataIn, LONG iLenIn);
+			[id(5)] LONG ocx_Open_EX(void);
+			[id(6)] LONG ocx_Close_EX(void);
+			[id(7)] LONG ocx_ResetDevice(void);
+			[id(8)] BSTR ocx_ReadCardTracks(LONG itimeout);
+			[id(9)] LONG ocx_GetDeviceStatus(void);
+			[id(10)] LONG ocx_GetMediaStatus(void);
+			[id(11)] BSTR ocx_GetSN(void);
+	};
+
+	//  CGWI_CardRead_AdaptExCtrl 的事件调度接口
+
+	[ 
+		uuid(0366321C-E7BC-4143-88AE-39A81E4A36C3)	
+	]
+	dispinterface _DGWI_CardRead_AdaptExEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+	};
+
+	//  CGWI_CardRead_AdaptExCtrl 的类信息
+	[
+		uuid(7F7313CB-3817-4AFB-A66A-E26398304CB2)
+	]
+	coclass GWI_CardRead_AdaptEx
+	{
+		[default] dispinterface _DGWI_CardRead_AdaptEx;
+		[default, source] dispinterface _DGWI_CardRead_AdaptExEvents;
+	};
+
+};

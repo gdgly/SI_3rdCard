@@ -1,0 +1,2 @@
+GWI_CardRead_Adapt:读卡器适配工程，支持SP的IDC和IC2
+GWI_SSSE_SC：四川社保卡接口工程

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GWI_SSSE_SC", "GWI_SSSE_SC\GWI_SSSE_SC.vcxproj", "{B5C016CE-6D20-42C9-8015-EBEAB440E1D1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GWI_SSSE_SC_TEST", "GWI_SSSE_SC_TEST\GWI_SSSE_SC_TEST.vcxproj", "{D8A36482-5796-47BD-86FE-D86DB2068919}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5C016CE-6D20-42C9-8015-EBEAB440E1D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5C016CE-6D20-42C9-8015-EBEAB440E1D1}.Debug|Win32.Build.0 = Debug|Win32
+		{B5C016CE-6D20-42C9-8015-EBEAB440E1D1}.Release|Win32.ActiveCfg = Release|Win32
+		{B5C016CE-6D20-42C9-8015-EBEAB440E1D1}.Release|Win32.Build.0 = Release|Win32
+		{D8A36482-5796-47BD-86FE-D86DB2068919}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8A36482-5796-47BD-86FE-D86DB2068919}.Debug|Win32.Build.0 = Debug|Win32
+		{D8A36482-5796-47BD-86FE-D86DB2068919}.Release|Win32.ActiveCfg = Release|Win32
+		{D8A36482-5796-47BD-86FE-D86DB2068919}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

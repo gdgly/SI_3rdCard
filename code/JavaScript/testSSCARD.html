@@ -1,0 +1,185 @@
+<html>
+<head>
+<style>
+ul{overflow:hidden;width:100%;}
+ul li{width:33.333%;float:left;}
+</style>
+<script type="text/javascript" src="SSCARD.js"></script>
+<script type="text/javascript" language="javascript">
+
+ 	function load(){
+ 		var addocx=document.getElementById("ocx");
+ 		setOcx(addocx);
+ 	}
+ 	
+    function getResult(f,i,o,r)
+	{
+	    var result='';
+		result+='function['+f+'];inparams['+i+'];outparams['+o+'];return['+r+']';
+		var show = document.getElementById('txt');
+		show.value = result;
+	}
+	
+	function _ocx_Init()
+	{
+		try{
+			var ret = ocxInit();
+			getResult('ocx_Init','','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+
+	function _ocx_Open_EX()
+	{
+		try{
+		var ret = ocxOpenEX();
+		getResult('ocx_Open_EX','','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+	
+	function _ocx_ResetDevice()
+	{
+		try{
+		var ret = ocxResetDevice();
+		getResult('ocx_ResetDevice','','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+	
+	function _ocx_GetDeviceStatus()
+	{
+		try{	
+		var ret = ocxGetDeviceStatus();
+		getResult('ocx_GetDeviceStatus','','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+	
+	function _ocx_GetMediaStatus()
+	{
+		try{	
+		var ret = ocxGetMediaStatus();
+		getResult('ocx_GetMediaStatus','','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+	
+	function _ocx_Close_EX()
+	{
+		try{
+		var ret = ocxCloseEx();
+		getResult('ocx_Close_EX','','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+	
+	function _ocx_PowerOn_EX()
+	{
+		try{
+		var ret = ocxPowerOnEX(3,20);
+		getResult('ocx_PowerOn_EX','iType=3,lTimeout=20','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+	
+	function _ocx_ChipIO_EX()
+	{
+		try{
+		var apdu=document.getElementById("apdu").value;
+		var len = document.getElementById("apdu").value.length;
+		var ret = ocxChipIOEX(apdu,len); 
+		getResult('ocx_Init','apdu='+apdu+';len='+len,'',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+	
+	
+	function _ocx_PowerOFF_EX()
+	{
+		try{
+		var ret = ocxPowerOFFEX();
+		getResult('ocx_Init','','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+	
+	function _ocx_ReadCardTracks()
+	{
+		try{
+		var ret = ocxReadCardTracks(20);
+		getResult('ocx_ReadCardTracks','20','',ret);
+		}catch(e)
+		{
+			alert(e);
+		}
+	}
+</script>
+
+<title>GWI_CardRead_AdaptEx.ocx</title>
+</head>
+
+<body onload="load">
+
+<object classid="clsid:7F7313CB-3817-4AFB-A66A-E26398304CB2" codebase="" id="ocx" width="20" height="20">
+	<param name="_Version" value="65536" valuetype="data"/>
+	<param name="_ExtentX" value="2646" valuetype="data"/>
+	<param name="_ExtentY" value="1323" valuetype="data"/>
+	<param name="_StockProps" value="0" valuetype="data"/>
+</object>
+<br/>
+
+<h2>测试页面包括2个功能模块；1.读卡机具对社保卡的操作； 2.读卡器硬件动作测试</h2>
+<div style="border:5px solid black;">
+	<h3>读卡器硬件动作操作</h3>
+	<ul>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_Init" onclick="_ocx_Init();"></li>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_Open_EX" onclick="_ocx_Open_EX();"></li>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_ResetDevice" onclick="_ocx_ResetDevice();"></li>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_GetDeviceStatus" onclick="_ocx_GetDeviceStatus();"></li>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_GetMediaStatus" onclick="_ocx_GetMediaStatus();"></li>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_Close_EX" onclick="_ocx_Close_EX();"></li>
+	</ul>
+	<ul>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_PowerOn_EX" onclick="_ocx_PowerOn_EX();"></li>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_ChipIO_EX" onclick="_ocx_ChipIO_EX();"></li><br/>
+		<br><span>indata:<input type="text" style="width:96%;height:50px" id="apdu"></span>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_PowerOFF_EX" onclick="_ocx_PowerOFF_EX();"></li>
+		<li><input style="width: 200px;height: 40px" type="button" value="ocx_ReadCardTracks" onclick="_ocx_ReadCardTracks();"></li>
+	</ul>
+	<div>
+		<span>result:<input type="text" style="width:96%;height:50px" id="txt"></span>
+	</div>
+</div>
+<div style="border:5px solid black;">
+	<h3>读卡器硬件动作操作</h3>
+	<div>
+		<span>
+			<h4>获取基本信息<h4><br>
+			<h5>1.调用iReadCardBas()根据返回结果第一位判断：不为0则判断执行出错 还是需要调用加密机（ret == -2201 || ret == -2202 || ret == -2203 || ret == -27272 || ret == -24）；为0，第二位就是数据</h5>
+			<h5>2.调用加密机第一步iReadCardBas_HSM_Step1()得到发给加密机数据</h5>
+			<h5>3.将加密数据判断卡类型：三代卡通过第三方方式调用返回加密机结果pkey；否则跳过此步骤</h5>
+			<h5>4.加密机结果pkey做入参传入加密机第二步iReadCardBas_HSM_Step2():如果不是3代卡传空</h5>
+		</span>
+	</div>
+</div>
+</body>
+</html>
